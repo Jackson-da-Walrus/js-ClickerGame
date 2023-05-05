@@ -7,14 +7,23 @@
   width: 150px;
   height: 160px;
   font-size: larger;
+  position: absolute;
+  left: 600px;
+  top: 250px;
 }
-#archealogist{
+#pickaxe{
   cursor: pointer;
   width: 150px;
-  position:fixed;
+  border-width: 3px;
+  position: absolute;
+  left: 600px;
+  top: 80px;
 }
 #statusText{
   font-size:large;
+  position: absolute;
+  left: 600px;
+  top: 400px;
 }
 
 

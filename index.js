@@ -14,28 +14,27 @@ gamestart();
 
 function gamestart(){
   diamond_btn.addEventListener("click", add);
-  archealogist.addEventListener("click", buy_help);
+  pickaxe.addEventListener("click", buy_help);
+  
 }
 
 
 
 function add(){
-  diamonds+= clk_power
+  Math.round(diamonds += clk_power)
   statusText.textContent = `Current Diamonds ${diamonds}`;
   add = false
-  diamonds += dps
-}
+  }
 function buy_help(){
   if(diamonds >= 10 * price_ext){
     diamonds-= 10 * price_ext
     statusText.textContent = `Current Diamonds ${diamonds}`;
     clk_power+=1
-    price_ext+=.05
+    price_ext+=.15
     buy_help = false
     dps+= 1
   }
 }
-
 
 
 
