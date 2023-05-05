@@ -7,17 +7,28 @@
   width: 150px;
   height: 160px;
   font-size: larger;
+  position: absolute;
+  left: 600px;
+  top: 325px;
 }
 #archealogist{
   cursor: pointer;
   width: 150px;
-  position:fixed;
+  position:absolute;
+  left: 600px;
+  top: 250px;
 }
 #statusText{
   font-size:large;
+  position: absolute;
+  left: 600px;
+  top: 200px;
 }
+
+  
 
 
 body{
-  background-color: rgb(134, 131, 131);
+  background-image: url('https://stackblitz.com/files/js-d2saxc/github/Jackson-da-Walrus/js-ClickerGame/main/images/New%20Drawing.png');
+  background-size: 100%;
 }
