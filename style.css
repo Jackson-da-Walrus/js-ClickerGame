@@ -1,0 +1,23 @@
+
+
+
+
+#diamond_btn{
+  cursor: pointer;
+  width: 150px;
+  height: 160px;
+  font-size: larger;
+}
+#archealogist{
+  cursor: pointer;
+  width: 150px;
+  position:fixed;
+}
+#statusText{
+  font-size:large;
+}
+
+
+body{
+  background-color: rgb(134, 131, 131);
+}
