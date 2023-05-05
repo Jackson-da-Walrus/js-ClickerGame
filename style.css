@@ -2,6 +2,7 @@
 
 
 
+
 #diamond_btn{
   cursor: pointer;
   width: 150px;
@@ -11,7 +12,7 @@
   left: 600px;
   top: 325px;
 }
-#archealogist{
+#pickaxe{
   cursor: pointer;
   width: 150px;
   position:absolute;
