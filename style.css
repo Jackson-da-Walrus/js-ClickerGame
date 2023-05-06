@@ -1,7 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
 
-
-
-
+}
 
 #diamond_btn{
   cursor: pointer;
@@ -25,6 +26,34 @@
   left: 600px;
   top: 200px;
 }
+#sidebar{
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  background: #000;
+  left: -300px;
+}
+#sidebar.active{
+  left: 0;
+}
+#sidebar ul li{
+  list-style: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px 24px;
+}
+#sidebar .toggle-btn{
+  position: absolute;
+  top: 30px;
+  left: 330px;
+}
+.toggle-btn span{
+  width: 45px;
+  height: 4px;
+  background: #000;
+  display: block;
+  margin-top: 4px;
+}
 
   
 
@@ -32,4 +61,5 @@
 body{
   background-image: url('https://stackblitz.com/files/js-d2saxc/github/Jackson-da-Walrus/js-ClickerGame/main/images/New%20Drawing.png');
   background-size: 100%;
+  
 }

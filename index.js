@@ -9,12 +9,25 @@ let dps = 0
 
 
 
+
+
 statusText.textContent = `Current Diamonds ${diamonds}`;
 gamestart();
+
+
+function showing(){
+  document.getElementById('sidebar').classList.toggle('active');
+
+
+}
+
 
 function gamestart(){
   diamond_btn.addEventListener("click", add);
   pickaxe.addEventListener("click", buy_help);
+  
+
+
   //document.getElementById('diamond_cursor').addEventListener('mousemove', (e) => {
     //document.getElementById('diamond_cursor').style.left = e.clientX;
   //});
@@ -45,6 +58,7 @@ function buy_help(){
     
   }
 }
+
 
 
 
