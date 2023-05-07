@@ -41,11 +41,9 @@ function add(){
 }
 function show_t(){
   document.getElementById('Tool_bar').classList.toggle('active');
-  document.getElementById('shop_btn').classList.toggle('active');
 }
 function show_h(){
   document.getElementById('Help_bar').classList.toggle('active');
-  document.getElementById('helper_btn').classList.toggle('active');
 }
 function buy_w(){
   if(diamonds >= 10 * w_ext){
