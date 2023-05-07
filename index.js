@@ -68,7 +68,7 @@ function buy_c(){
     clk_power+=10
     c_ext+= c_ext * .50
     buy_c = false
-    diamonds = parseInt(diamonds)  
+    diamonds = parseInt(diamonds)
   }
 }
 function buy_u(){
