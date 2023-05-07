@@ -13,13 +13,7 @@
   left: 600px;
   top: 325px;
 }
-#pickaxe{
-  cursor: pointer;
-  width: 150px;
-  position:absolute;
-  left: 600px;
-  top: 250px;
-}
+
 #statusText{
   font-size:large;
   position: absolute;
@@ -29,12 +23,16 @@
 #sidebar{
   position: absolute;
   width: 300px;
-  height: 100%;
+  height: 275;
   background: #000;
   left: -300px;
+  top: 190px;
+  transition: .4s;
+  
 }
 #sidebar.active{
   left: 0;
+  
 }
 #sidebar ul li{
   list-style: none;
@@ -42,18 +40,12 @@
   font-size: 20px;
   padding: 20px 24px;
 }
-#sidebar .toggle-btn{
+
+#shop_btn{
   position: absolute;
-  top: 30px;
-  left: 330px;
+  top:
 }
-.toggle-btn span{
-  width: 45px;
-  height: 4px;
-  background: #000;
-  display: block;
-  margin-top: 4px;
-}
+
 
   
 

@@ -6,6 +6,7 @@ let clk_power = 1
 let price_ext = 1
 let timer = 0
 let dps = 0
+let btn_x = 0
 
 
 
@@ -15,16 +16,11 @@ statusText.textContent = `Current Diamonds ${diamonds}`;
 gamestart();
 
 
-function showing(){
-  document.getElementById('sidebar').classList.toggle('active');
-
-
-}
 
 
 function gamestart(){
   diamond_btn.addEventListener("click", add);
-  pickaxe.addEventListener("click", buy_help);
+  shop_btn.addEventListener("click", show);
   
 
 
@@ -57,6 +53,9 @@ function buy_help(){
     buy_help = false
     
   }
+}
+function show(){
+  document.getElementById('sidebar').classList.toggle('active');
 }
 
 
