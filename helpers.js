@@ -1,3 +1,10 @@
+let geo_ext = 1
+let drl_ext = 1
+let drn_ext = 1
+let prnt_ext = 1
+
+
+
 function buy_w(){
   if(diamonds >= 10 * w_ext){
     diamonds-= 10 * w_ext
