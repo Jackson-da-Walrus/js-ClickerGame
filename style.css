@@ -114,5 +114,14 @@
 body{
   background-image: url('https://stackblitz.com/files/js-d2saxc/github/Jackson-da-Walrus/js-ClickerGame/main/images/New%20Drawing.png');
   background-size: 100%;
-  
+  font-size: 25px;
+}
+#js_timer{
+  text-align: center;
+}
+#timer{
+  background: #fff;
+  color: #000;
+  width: 100px;
+  margin: 50px auto;
 }

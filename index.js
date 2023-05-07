@@ -11,10 +11,10 @@ var geo_ext = 1
 var drl_ext = 1
 var drn_ext = 1
 var prnt_ext = 1
-let timer = 0
 let dps = 0
 let btn_x = 0
 var i = 1
+
 
 
 
@@ -39,6 +39,7 @@ function gamestart(){
   Plasma_dr.addEventListener("click", buy_drn);
   Diamond_pnt.addEventListener("click", buy_prnt);
   
+  
 
 
 
@@ -46,10 +47,21 @@ function gamestart(){
     //document.getElementById('diamond_cursor').style.left = e.clientX;
   //});
 }
+
+
+
+
+
+
+
+
+
+
 function add(){
   diamonds+= clk_power
   statusText.textContent = `Current Diamonds ${diamonds}`;
   add = false
+  
 }
 function show_t(){
   document.getElementById('Tool_bar').classList.toggle('active');
