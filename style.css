@@ -20,22 +20,22 @@
   left: 600px;
   top: 250px;
 }
-#sidebar{
+#Tool_bar{
   position: absolute;
-  width: 290px;
+  width: 240px;
   height: 700;
-  background-image: url('https://stackblitz.com/files/js-d2saxc/github/Jackson-da-Walrus/js-ClickerGame/main/images/Screenshot%202023-05-06%209.32.57%20PM.png');
+  background-image: url('https://stackblitz.com/files/js-d2saxc/github/Jackson-da-Walrus/js-ClickerGame/main/images/Screenshot%202023-05-06%209.42.49%20PM.png');
   background-size: 100%;
   left: -300px;
   top: 190px;
   transition: .4s;
   
 }
-#sidebar.active{
+#Tool_bar.active{
   left: 0;
   
 }
-#sidebar ul li{
+#Tool_bar ul li{
   list-style: none;
   color: #fff;
   font-size: 20px;
@@ -43,8 +43,21 @@
 }
 
 #shop_btn{
+  cursor: pointer;
   position: absolute;
-  top:
+  width: 150px;
+}
+#W_pick{
+  cursor: pointer;
+}
+#S_pick{
+  cursor: pointer;
+}
+#C_pick{
+  cursor: pointer;
+}
+#U_pick{
+  cursor: pointer;
 }
 
 
@@ -52,7 +65,7 @@
 
 
 body{
-  background-image: url('https://stackblitz.com/files/js-d2saxc/github/Jackson-da-Walrus/js-ClickerGame/main/images/Screenshot%202023-05-06%2011.01.36%20PM.png');
+  background-image: url('https://stackblitz.com/files/js-d2saxc/github/Jackson-da-Walrus/js-ClickerGame/main/images/New%20Drawing.png');
   background-size: 100%;
   
 }
