@@ -24,7 +24,8 @@ gamestart();
 
 function gamestart(){
   diamond_btn.addEventListener("click", add);
-  shop_btn.addEventListener("click", show);
+  shop_btn.addEventListener("click", show_t);
+  helper_btn.addEventListener("click", show_h);
   W_pick.addEventListener("click", buy_w);
   S_pick.addEventListener("click", buy_s);
   C_pick.addEventListener("click", buy_c);
@@ -38,9 +39,13 @@ function add(){
   statusText.textContent = `Current Diamonds ${diamonds}`;
   add = false
 }
-function show(){
+function show_t(){
   document.getElementById('Tool_bar').classList.toggle('active');
   document.getElementById('shop_btn').classList.toggle('active');
+}
+function show_h(){
+  document.getElementById('Help_bar').classList.toggle('active');
+  document.getElementById('helper_btn').classList.toggle('active');
 }
 function buy_w(){
   if(diamonds >= 10 * w_ext){
