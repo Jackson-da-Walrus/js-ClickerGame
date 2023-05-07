@@ -26,6 +26,9 @@ function gamestart(){
   diamond_btn.addEventListener("click", add);
   shop_btn.addEventListener("click", show);
   W_pick.addEventListener("click", buy_w);
+  S_pick.addEventListener("click", buy_s);
+  C_pick.addEventListener("click", buy_c);
+  U_pick.addEventListener("click", buy_u);
     //document.getElementById('diamond_cursor').addEventListener('mousemove', (e) => {
     //document.getElementById('diamond_cursor').style.left = e.clientX;
   //});
