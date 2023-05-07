@@ -11,14 +11,14 @@
   font-size: larger;
   position: absolute;
   left: 600px;
-  top: 325px;
+  top: 265px;
 }
 
 #statusText{
   font-size:large;
   position: absolute;
   left: 600px;
-  top: 200px;
+  top: 250px;
 }
 #sidebar{
   position: absolute;
