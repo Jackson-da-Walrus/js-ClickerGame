@@ -47,6 +47,14 @@
   position: absolute;
   width: 150px;
 }
+#helper_btn{
+  cursor: pointer;
+  width: 145px;
+  position: absolute;
+  left: 1225px;
+
+
+}
 #W_pick{
   cursor: pointer;
 }
