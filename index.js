@@ -48,6 +48,7 @@ function buy_w(){
     clk_power+=1
     w_ext+= w_ext * .50
     buy_w = false
+    diamonds = parseInt(diamonds)
   }
 }
 function buy_s(){
@@ -57,6 +58,7 @@ function buy_s(){
     clk_power+=3
     s_ext+= s_ext * .50
     buy_s = false
+    diamonds = parseInt(diamonds)
   }
 }
 function buy_c(){
@@ -66,6 +68,7 @@ function buy_c(){
     clk_power+=10
     c_ext+= c_ext * .50
     buy_c = false
+    diamonds = parseInt(diamonds)
   }
 }
 function buy_u(){
@@ -75,6 +78,7 @@ function buy_u(){
     clk_power+=20
     u_ext+= u_ext * .50
     buy_u = false
+    diamonds = parseInt(diamonds)
   }
 }
 
