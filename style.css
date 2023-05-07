@@ -22,9 +22,10 @@
 }
 #sidebar{
   position: absolute;
-  width: 300px;
-  height: 275;
-  background: #000;
+  width: 290px;
+  height: 700;
+  background-image: url('https://stackblitz.com/files/js-d2saxc/github/Jackson-da-Walrus/js-ClickerGame/main/images/Screenshot%202023-05-06%209.32.57%20PM.png');
+  background-size: 100%;
   left: -300px;
   top: 190px;
   transition: .4s;
