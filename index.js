@@ -8,6 +8,10 @@ let w_ext = 1
 let s_ext = 1
 let c_ext = 1
 let u_ext = 1
+let geo_ext = 1
+let drl_ext = 1
+let drn_ext = 1
+let prnt_ext = 1
 let timer = 0
 let dps = 0
 let btn_x = 0
@@ -30,6 +34,10 @@ function gamestart(){
   S_pick.addEventListener("click", buy_s);
   C_pick.addEventListener("click", buy_c);
   U_pick.addEventListener("click", buy_u);
+
+
+
+  
     //document.getElementById('diamond_cursor').addEventListener('mousemove', (e) => {
     //document.getElementById('diamond_cursor').style.left = e.clientX;
   //});
