@@ -34,10 +34,13 @@ function gamestart(){
   S_pick.addEventListener("click", buy_s);
   C_pick.addEventListener("click", buy_c);
   U_pick.addEventListener("click", buy_u);
+  Geo.addEventListener("click", buy_geo);
+  Auto_d.addEventListener("click", buy_drl);
+  Plasma_dr.addEventListener("click", buy_drn);
+  Diamond_pnt.addEventListener("click", buy_prnt);
 
 
 
-  
     //document.getElementById('diamond_cursor').addEventListener('mousemove', (e) => {
     //document.getElementById('diamond_cursor').style.left = e.clientX;
   //});
@@ -93,6 +96,7 @@ function buy_u(){
     diamonds = parseInt(diamonds)
   }
 }
+
 
 
 
