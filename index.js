@@ -12,13 +12,10 @@ var drl_ext = 1
 var drn_ext = 1
 var prnt_ext = 1
 var dps = 0
-let score_t = 0;
 
 
 
-function score(){
-  score_t += 100;
-}
+
 
 
 
@@ -42,12 +39,10 @@ function gamestart(){
   Auto_d.addEventListener("click", buy_drl);
   Plasma_dr.addEventListener("click", buy_drn);
   Diamond_pnt.addEventListener("click", buy_prnt);
+  
 }
 
-function D_P_S(){
-  diamonds += dps
-  statusText.textContent = `Current Diamonds ${diamonds}`;
-}
+
 
 
 
