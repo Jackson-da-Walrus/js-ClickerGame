@@ -11,10 +11,14 @@ var geo_ext = 1
 var drl_ext = 1
 var drn_ext = 1
 var prnt_ext = 1
-let dps = 0
-let btn_x = 0
-var i = 1
+var dps = 0
+let score_t = 0;
 
+
+
+function score(){
+  score_t += 100;
+}
 
 
 
@@ -38,14 +42,11 @@ function gamestart(){
   Auto_d.addEventListener("click", buy_drl);
   Plasma_dr.addEventListener("click", buy_drn);
   Diamond_pnt.addEventListener("click", buy_prnt);
-  
-  
+}
 
-
-
-    //document.getElementById('diamond_cursor').addEventListener('mousemove', (e) => {
-    //document.getElementById('diamond_cursor').style.left = e.clientX;
-  //});
+function D_P_S(){
+  diamonds += dps
+  statusText.textContent = `Current Diamonds ${diamonds}`;
 }
 
 
@@ -61,7 +62,6 @@ function add(){
   diamonds+= clk_power
   statusText.textContent = `Current Diamonds ${diamonds}`;
   add = false
-  
 }
 function show_t(){
   document.getElementById('Tool_bar').classList.toggle('active');
@@ -109,13 +109,11 @@ function buy_u(){
     diamonds = parseInt(diamonds)
   }
 }
-
-
 function buy_geo(){
   if(diamonds >= 10 * geo_ext){
     diamonds-= 10 * geo_ext
     statusText.textContent = `Current Diamonds ${diamonds}`;
-    
+    dps = dps + 1
     geo_ext+= geo_ext * .50
     buy_geo = false
     diamonds = parseInt(diamonds)
@@ -125,7 +123,7 @@ function buy_drl(){
   if(diamonds >= 150 * drl_ext){
     diamonds-= 150 * drl_ext
     statusText.textContent = `Current Diamonds ${diamonds}`;
-    
+    dps += 5
     drl_ext+= drl_ext * .50
     buy_drl = false
     diamonds = parseInt(diamonds)
