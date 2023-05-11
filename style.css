@@ -11,7 +11,7 @@
   font-size: larger;
   position: absolute;
   left: 610px;
-  top: 265px;
+  top: 345px;
 }
 
 #statusText{
@@ -110,13 +110,13 @@
   position: absolute;
   left: 580px;
   width: 40px;
-  top: 330px;
+  top: 400px;
 }
 #drl_img{
   position: absolute;
   width: 100px;
   left: 725px;
-  top: 330px;
+  top: 400px;
 }
 
 
@@ -124,7 +124,7 @@
 
 
 body{
-  background-image: url('https://stackblitz.com/files/js-d2saxc/github/Jackson-da-Walrus/js-ClickerGame/main/images/New%20Drawing.png');
+  background-image: url('https://stackblitz.com/files/js-d2saxc/github/Jackson-da-Walrus/js-ClickerGame/main/images/Untitled%20Drawing2.png');
   background-size: 100%;
   font-size: 25px;
 }
