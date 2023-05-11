@@ -11,12 +11,13 @@
   font-size: larger;
   position: absolute;
   left: 610px;
-  top: 345px;
+  top: 285px;
 }
 
 #statusText{
   font-size:large;
   position: absolute;
+  color: gold;
   left: 600px;
   top: 250px;
 }
@@ -110,13 +111,13 @@
   position: absolute;
   left: 580px;
   width: 40px;
-  top: 400px;
+  top: 350px;
 }
 #drl_img{
   position: absolute;
   width: 100px;
   left: 725px;
-  top: 400px;
+  top: 347px;
 }
 #credits{
   position: absolute;
