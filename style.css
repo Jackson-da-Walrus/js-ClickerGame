@@ -106,6 +106,18 @@
 #Diamond_pnt{
   cursor: pointer;
 }
+#geo_img{
+  position: absolute;
+  left: 580px;
+  width: 40px;
+  top: 330px;
+}
+#drl_img{
+  position: absolute;
+  width: 100px;
+  left: 725px;
+  top: 330px;
+}
 
 
   
