@@ -106,6 +106,13 @@
 #Diamond_pnt{
   cursor: pointer;
 }
+#helper_img{
+  cursor: pointer;
+  position: absolute;
+  left: 575px;
+  top: 330px;
+  width: 40px;
+}
 
 
   
