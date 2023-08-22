@@ -11,7 +11,7 @@
   font-size: larger;
   position: absolute;
   left: 610px;
-  top: 285px;
+  top: 305px;
 }
 
 #statusText{
@@ -19,7 +19,7 @@
   position: absolute;
   color: gold;
   left: 600px;
-  top: 272px;
+  top: 288px;
 }
 #Tool_bar{
   position: absolute;
@@ -112,18 +112,20 @@
   left: 580px;
   width: 40px;
   top: 350px;
+  display: none;
 }
 #drl_img{
   position: absolute;
   width: 100px;
   left: 725px;
   top: 347px;
+  display: none;
 }
 #credits{
   position: absolute;
-  font-size:large;
-  left: 1150px;
-  color: rgb(6, 83, 184);
+  font-size: x-large;
+  left: 1075px;
+  color: rgb(0, 37, 85);
 }
 
   
