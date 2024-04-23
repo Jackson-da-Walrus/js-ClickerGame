@@ -15,6 +15,9 @@ var prnt_ext = 1
 var rebirth_mult = 1
 let auto_clicker = 0;
 
+
+
+
 statusText.textContent = `Current Diamonds ${diamonds}`;
 gamestart();
 
@@ -31,23 +34,29 @@ function gamestart(){
   Auto_d.addEventListener("click", buy_drl)
   Plasma_dr.addEventListener("click", buy_drn)
   Diamond_pnt.addEventListener("click", buy_prnt)
+  
+
 }
 
+
 function rebirth(){
-  diamonds = 0
-  document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
-  clk_power = 1
-  dps = 0
-  auto_clicker = 0
-  geo_ext = 1
-  drl_ext = 1
-  drn_ext = 1
-  prnt_ext = 1
-  w_ext = 1
-  s_ext = 1
-  c_ext = 1
-  u_ext = 1
-  rebirth_mult += .10
+  if(diamonds >= 150000){
+    diamonds = 0
+    document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
+    clk_power = 1
+    dps = 0
+    auto_clicker = 0
+    geo_ext = 1
+    drl_ext = 1
+    drn_ext = 1
+    prnt_ext = 1
+    w_ext = 1
+    s_ext = 1
+    c_ext = 1
+    u_ext = 1
+    rebirth_mult += .10
+  }
+ 
 }
 function buy_geo(){
   if(diamonds >= 750 * geo_ext){
