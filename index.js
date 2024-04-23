@@ -138,7 +138,7 @@ function buy_w(){
     diamonds-= 10 * w_ext
     diamonds = parseInt(diamonds)
     statusText.textContent = `Current Diamonds ${diamonds}`;
-    clk_power+=99
+    clk_power+=1
     w_ext+= w_ext * .20
     buy_w = false
   }
@@ -164,8 +164,8 @@ function buy_c(){
   }
 }
 function buy_u(){
-  if(diamonds >= 2500 * u_ext){
-    diamonds-= 2500 * u_ext
+  if(diamonds >= 3000 * u_ext){
+    diamonds-= 3000 * u_ext
     diamonds = parseInt(diamonds)
     statusText.textContent = `Current Diamonds ${diamonds}`;
     clk_power+=20
