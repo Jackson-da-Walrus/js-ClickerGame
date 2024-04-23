@@ -12,6 +12,7 @@ var geo_ext = 1
 var drl_ext = 1
 var drn_ext = 1
 var prnt_ext = 1
+var rebirth_mult = 1
 let auto_clicker = 0;
 
 statusText.textContent = `Current Diamonds ${diamonds}`;
@@ -21,6 +22,7 @@ function gamestart(){
   diamond_btn.addEventListener("click", add);
   shop_btn.addEventListener("click", show_t);
   helper_btn.addEventListener("click", show_h);
+  rebirth_btn.addEventListener("click", rebirth);
   W_pick.addEventListener("click", buy_w);
   S_pick.addEventListener("click", buy_s);
   C_pick.addEventListener("click", buy_c);
@@ -31,7 +33,22 @@ function gamestart(){
   Diamond_pnt.addEventListener("click", buy_prnt)
 }
 
-
+function rebirth(){
+  diamonds = 0
+  document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
+  clk_power = 1
+  dps = 0
+  auto_clicker = 0
+  geo_ext = 1
+  drl_ext = 1
+  drn_ext = 1
+  prnt_ext = 1
+  w_ext = 1
+  s_ext = 1
+  c_ext = 1
+  u_ext = 1
+  rebrith_mult = rebirth_mult * 1.05
+}
 function buy_geo(){
   if(diamonds >= 750 * geo_ext){
     dps = dps + 1
@@ -41,7 +58,7 @@ function buy_geo(){
     diamonds = parseInt(diamonds)
     document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     setInterval(function(){
-      diamonds = diamonds + dps
+      diamonds = diamonds + (dps * rebirth_mult)
       document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     }, 1000);  
   }
@@ -55,7 +72,7 @@ function buy_drl(){
     diamonds = parseInt(diamonds)
     document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     setInterval(function(){
-      diamonds = diamonds + dps
+      diamonds = diamonds + (dps * rebirth_mult)
       document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     }, 1000);  
   }
@@ -69,7 +86,7 @@ function buy_drn(){
     diamonds = parseInt(diamonds)
     document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     setInterval(function(){
-      diamonds = diamonds + dps
+      diamonds = diamonds + (dps * rebirth_mult)
       document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     }, 1000);  
   }
@@ -82,7 +99,7 @@ function buy_drn(){
     diamonds = parseInt(diamonds)
     document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     setInterval(function(){
-      diamonds = diamonds + dps
+      diamonds = diamonds + (dps * rebirth_mult)
       document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     }, 1000);  
   }
@@ -93,7 +110,7 @@ function buy_drn(){
 
 
 function add(){
-  diamonds+= clk_power
+  diamonds += clk_power * rebirth_mult
   statusText.textContent = `Current Diamonds ${diamonds}`;
   add = false
 }
@@ -108,7 +125,7 @@ function buy_w(){
     diamonds-= 10 * w_ext
     diamonds = parseInt(diamonds)
     statusText.textContent = `Current Diamonds ${diamonds}`;
-    clk_power+=1
+    clk_power+=50
     w_ext+= w_ext * .20
     buy_w = false
   }

@@ -13,7 +13,9 @@
   left: 610px;
   top: 305px;
 }
-
+#rebirth_btn{
+  cursor: pointer;
+}
 #statusText{
   font-size:large;
   position: absolute;
