@@ -47,7 +47,7 @@ function rebirth(){
   s_ext = 1
   c_ext = 1
   u_ext = 1
-  rebrith_mult = rebirth_mult * 1.05
+  rebirth_mult += .10
 }
 function buy_geo(){
   if(diamonds >= 750 * geo_ext){
@@ -59,6 +59,7 @@ function buy_geo(){
     document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     setInterval(function(){
       diamonds = diamonds + (dps * rebirth_mult)
+      diamonds = Math.trunc(diamonds)
       document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     }, 1000);  
   }
@@ -73,6 +74,7 @@ function buy_drl(){
     document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     setInterval(function(){
       diamonds = diamonds + (dps * rebirth_mult)
+      diamonds = Math.trunc(diamonds)
       document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     }, 1000);  
   }
@@ -87,6 +89,7 @@ function buy_drn(){
     document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     setInterval(function(){
       diamonds = diamonds + (dps * rebirth_mult)
+      diamonds = Math.trunc(diamonds)
       document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     }, 1000);  
   }
@@ -100,6 +103,7 @@ function buy_drn(){
     document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     setInterval(function(){
       diamonds = diamonds + (dps * rebirth_mult)
+      diamonds = Math.trunc(diamonds)
       document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     }, 1000);  
   }
@@ -111,6 +115,7 @@ function buy_drn(){
 
 function add(){
   diamonds += clk_power * rebirth_mult
+  diamonds = Math.trunc(diamonds)
   statusText.textContent = `Current Diamonds ${diamonds}`;
   add = false
 }
@@ -125,7 +130,7 @@ function buy_w(){
     diamonds-= 10 * w_ext
     diamonds = parseInt(diamonds)
     statusText.textContent = `Current Diamonds ${diamonds}`;
-    clk_power+=50
+    clk_power+=99
     w_ext+= w_ext * .20
     buy_w = false
   }
