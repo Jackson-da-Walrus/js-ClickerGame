@@ -34,9 +34,8 @@ function gamestart(){
   Auto_d.addEventListener("click", buy_drl)
   Plasma_dr.addEventListener("click", buy_drn)
   Diamond_pnt.addEventListener("click", buy_prnt)
-  
-
 }
+
 
 
 function rebirth(){
