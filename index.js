@@ -174,8 +174,5 @@ function buy_u(){
   }
 }
 
-  
-
-
 
 
