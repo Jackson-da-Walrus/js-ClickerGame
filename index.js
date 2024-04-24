@@ -169,13 +169,13 @@ function buy_c(){
   }
 }
 function buy_u(){
-  if(diamonds >= 3000 * u_ext){
-    diamonds-= 3000 * u_ext
+  if(diamonds >= 4000 * u_ext){
+    diamonds-= 4000 * u_ext
     diamonds = parseInt(diamonds)
     statusText.textContent = `Current Diamonds ${diamonds}`;
     clk_power+=20
     u_ext+= u_ext * .20
-    U_pick.textContent = `Wooden Pick + 20 - ` + Math.round(3000 * u_ext);
+    U_pick.textContent = `Wooden Pick + 20 - ` + Math.round(4000 * u_ext);
     buy_u = false
   }
 }
