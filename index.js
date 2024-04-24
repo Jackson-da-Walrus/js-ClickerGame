@@ -142,6 +142,7 @@ function buy_w(){
     statusText.textContent = `Current Diamonds ${diamonds}`;
     clk_power+=1
     w_ext+= w_ext * .20
+    W_pick.textContent = `Wooden Pick + 1 - ` + Math.round(10 * w_ext);
     buy_w = false
   }
 }
@@ -152,6 +153,7 @@ function buy_s(){
     statusText.textContent = `Current Diamonds ${diamonds}`;
     clk_power+=3
     s_ext+= s_ext * .20
+    S_pick.textContent = `Stone Pick + 3 - ` + Math.round(150 * s_ext);
     buy_s = false
   }
 }
@@ -162,6 +164,7 @@ function buy_c(){
     statusText.textContent = `Current Diamonds ${diamonds}`;
     clk_power+=10
     c_ext+= c_ext * .20
+    C_pick.textContent = `Wooden Pick + 10 - ` + Math.round(1000 * c_ext);
     buy_c = false
   }
 }
@@ -172,6 +175,7 @@ function buy_u(){
     statusText.textContent = `Current Diamonds ${diamonds}`;
     clk_power+=20
     u_ext+= u_ext * .20
+    U_pick.textContent = `Wooden Pick + 20 - ` + Math.round(3000 * u_ext);
     buy_u = false
   }
 }
