@@ -151,13 +151,13 @@ function buy_w(){
   }
 }
 function buy_s(){
-  if(diamonds >= 150 * s_ext){
-    diamonds-= 150 * s_ext
+  if(diamonds >= 180 * s_ext){
+    diamonds-= 180 * s_ext
     diamonds = parseInt(diamonds)
     statusText.textContent = `Current Diamonds ${diamonds}`;
     clk_power+=3
     s_ext+= s_ext * .20
-    S_pick.textContent = `Stone Pick +3 - ` + Math.round(150 * s_ext);
+    S_pick.textContent = `Stone Pick +3 - ` + Math.round(180 * s_ext);
     buy_s = false
   }
 }
