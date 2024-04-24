@@ -13,6 +13,7 @@ var drl_ext = 1
 var drn_ext = 1
 var prnt_ext = 1
 var rebirth_mult = 1
+var rebirth_ext = 1
 let auto_clicker = 0;
 
 
@@ -39,7 +40,7 @@ function gamestart(){
 
 
 function rebirth(){
-  if(diamonds >= 150000){
+  if(diamonds >= 150000 * rebirth_ext){
     diamonds = 0
     document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     clk_power = 1
@@ -54,6 +55,7 @@ function rebirth(){
     c_ext = 1
     u_ext = 1
     rebirth_mult += .10
+    rebirth_ext += .20
   }
  
 }
