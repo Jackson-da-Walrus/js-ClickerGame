@@ -140,13 +140,13 @@ function show_h(){
   document.getElementById('Help_bar').classList.toggle('active');
 }
 function buy_w(){
-  if(diamonds >= 10 * w_ext){
-    diamonds-= 10 * w_ext
+  if(diamonds >= 50 * w_ext){
+    diamonds-= 50 * w_ext
     diamonds = parseInt(diamonds)
     statusText.textContent = `Current Diamonds ${diamonds}`;
     clk_power+=1
     w_ext+= w_ext * .20
-    W_pick.textContent = `Wooden Pick +1 - ` + Math.round(10 * w_ext);
+    W_pick.textContent = `Wooden Pick +1 - ` + Math.round(50 * w_ext);
     buy_w = false
   }
 }
