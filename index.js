@@ -168,7 +168,7 @@ function buy_c(){
     statusText.textContent = `Current Diamonds ${diamonds}`;
     clk_power+=10
     c_ext+= c_ext * .20
-    C_pick.textContent = `Wooden Pick +10 - ` + Math.round(1000 * c_ext);
+    C_pick.textContent = `Copper Pick +10 - ` + Math.round(1000 * c_ext);
     buy_c = false
   }
 }
@@ -179,7 +179,7 @@ function buy_u(){
     statusText.textContent = `Current Diamonds ${diamonds}`;
     clk_power+=20
     u_ext+= u_ext * .20
-    U_pick.textContent = `Wooden Pick +20 - ` + Math.round(4000 * u_ext);
+    U_pick.textContent = `Unobtainiun Pick +20 - ` + Math.round(4000 * u_ext);
     buy_u = false
   }
 }
