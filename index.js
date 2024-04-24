@@ -65,6 +65,7 @@ function buy_geo(){
     auto_clicker = auto_clicker + 1;
     diamonds = diamonds - 750 * geo_ext
     geo_ext += geo_ext * .25
+    Geo.textContent = `Geologist +1/s -` + Math.round(750 * geo_ext);
     diamonds = parseInt(diamonds)
     document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     setInterval(function(){
@@ -80,6 +81,7 @@ function buy_drl(){
     auto_clicker = auto_clicker + 1;
     diamonds = diamonds - 5000 * drl_ext
     drl_ext += drl_ext * .25
+    Auto_d.textContent = `Auto drill +5/s - ` + Math.round(5000 * drl_ext);
     diamonds = parseInt(diamonds)
     document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     setInterval(function(){
@@ -95,6 +97,7 @@ function buy_drn(){
     auto_clicker = auto_clicker + 1;
     diamonds = diamonds - 15000 * drn_ext
     drn_ext += drn_ext * .25
+    Plasma_dr.textContent = `Plasma drone +15/s - ` + Math.round(15000 * drn_ext);
     diamonds = parseInt(diamonds)
     document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     setInterval(function(){
@@ -109,6 +112,7 @@ function buy_drn(){
     auto_clicker = auto_clicker + 1;
     diamonds = diamonds - 25000 * prnt_ext
     prnt_ext += prnt_ext * .25
+    Diamond_pnt.textContent = `Diamond printer +30/s - ` + Math.round(25000 * prnt_ext);
     diamonds = parseInt(diamonds)
     document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     setInterval(function(){

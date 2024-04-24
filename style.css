@@ -30,11 +30,11 @@
 }
 #Tool_bar{
   position: absolute;
-  width: 305px;
+  width: 300px;
   height: 700;
   background-image: url('https://stackblitz.com/files/js-d2saxc/github/Jackson-da-Walrus/js-ClickerGame/main/images/Screenshot%202023-05-06%209.42.49%20PM.png');
   background-size: 100%;
-  left: -290px;
+  left: -285px;
   top: 130px;
   transition: .4s;
   
@@ -60,11 +60,11 @@ body{
 
 #Help_bar{
   position: absolute;
-  width: 245px;
+  width: 300px;
   height: 700;
   background-image: url('https://stackblitz.com/files/js-d2saxc/github/Jackson-da-Walrus/js-ClickerGame/main/images/Screenshot%202023-05-06%209.42.49%20PM.png');
   background-size: 100%;
-  left: -230px;
+  left: -285px;
   top: 490px;
   transition: .4s;
   
@@ -76,7 +76,7 @@ body{
 #Help_bar ul li{
   list-style: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   padding: 20px 24px;
 }
 
@@ -146,7 +146,7 @@ body{
 
 
 body{
-  
+  background-position: fixed;
   background-image: url('https://stackblitz.com/files/js-d2saxc/github/Jackson-da-Walrus/js-ClickerGame/main/images/Untitled%20Drawing2%20(2).png');
   background-size: 100%;
   font-size: 25px;
