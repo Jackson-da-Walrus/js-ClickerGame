@@ -126,7 +126,6 @@ function buy_drn(){
   
 
 
-
 function add(){
   diamonds += clk_power * rebirth_mult
   diamonds = Math.trunc(diamonds)
@@ -136,6 +135,7 @@ function add(){
 function show_t(){
   document.getElementById('Tool_bar').classList.toggle('active');
 }
+
 function show_h(){
   document.getElementById('Help_bar').classList.toggle('active');
 }
