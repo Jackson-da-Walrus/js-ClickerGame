@@ -30,7 +30,7 @@
   transition: .4s;
 }
 #gear_icon.active{
-  left: 1100;
+  left: 1100px;
 }
 #statusText{
   font-size:large;
