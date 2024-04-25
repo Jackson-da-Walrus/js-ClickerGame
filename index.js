@@ -61,6 +61,7 @@ function rebirth(){
 }
 function open_settings(){
   document.getElementById('gear_icon').classList.toggle('active');
+  document.getElementById("clk_power_see").innerText = "Per click " + clk_power;
 }
 
 

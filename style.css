@@ -30,7 +30,7 @@
   transition: .4s;
 }
 #gear_icon.active{
-  left: 1100px;
+  left: 1000px;
 }
 #statusText{
   font-size:large;
@@ -59,6 +59,21 @@
   color: #fff;
   font-size: 16px;
   padding: 20px 24px;
+}
+#settings_menu{
+  position: absolute;
+  background-image: url('https://stackblitz.com/files/js-d2saxc/github/Jackson-da-Walrus/js-ClickerGame/main/images/Screenshot%202023-05-06%209.42.49%20PM.png');
+  background-size: 100%;
+  left: 1600px;
+  top: 70px;
+  transition: .4s;
+}
+#settings_menu.active{
+  left: 1200px;
+}
+#setting_menu ul li{
+  list-style: none;
+  color: #fff;
 }
 body{
   -webkit-touch-callout: none;
