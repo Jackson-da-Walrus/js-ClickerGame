@@ -21,6 +21,17 @@
   width: 165px;
   
 }
+#gear_icon{
+  position: absolute;
+  cursor: pointer;
+  width: 170px;
+  top: 25px;
+  left: 1220px;
+  transition: .4s;
+}
+#gear_icon.active{
+  left: 1100;
+}
 #statusText{
   font-size:large;
   position: absolute;

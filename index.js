@@ -24,6 +24,7 @@ gamestart();
 
 function gamestart(){
   diamond_btn.addEventListener("click", add);
+  gear_icon.addEventListener("click", open_settings);
   shop_btn.addEventListener("click", show_t);
   helper_btn.addEventListener("click", show_h);
   rebirth_btn.addEventListener("click", rebirth);
@@ -57,8 +58,12 @@ function rebirth(){
     rebirth_mult *= 1.15
     rebirth_ext *= 1.18
   }
- 
 }
+function open_settings(){
+  document.getElementById('gear_icon').classList.toggle('active');
+}
+
+
 function buy_geo(){
   if(diamonds >= 350 * geo_ext){
     dps = dps + 1
