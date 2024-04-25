@@ -151,35 +151,35 @@ function buy_w(){
   }
 }
 function buy_s(){
-  if(diamonds >= 180 * s_ext){
-    diamonds-= 180 * s_ext
+  if(diamonds >= 200 * s_ext){
+    diamonds-= 200 * s_ext
     diamonds = parseInt(diamonds)
     statusText.textContent = `Current Diamonds ${diamonds}`;
     clk_power+=3
     s_ext+= s_ext * .20
-    S_pick.textContent = `Stone Pick +3 - ` + Math.round(180 * s_ext);
+    S_pick.textContent = `Stone Pick +3 - ` + Math.round(200 * s_ext);
     buy_s = false
   }
 }
 function buy_c(){
-  if(diamonds >= 1000 * c_ext){
-    diamonds-= 1000 * c_ext
+  if(diamonds >= 2000 * c_ext){
+    diamonds-= 2000 * c_ext
     diamonds = parseInt(diamonds)
     statusText.textContent = `Current Diamonds ${diamonds}`;
     clk_power+=10
     c_ext+= c_ext * .20
-    C_pick.textContent = `Copper Pick +10 - ` + Math.round(1000 * c_ext);
+    C_pick.textContent = `Copper Pick +10 - ` + Math.round(2000 * c_ext);
     buy_c = false
   }
 }
 function buy_u(){
-  if(diamonds >= 4000 * u_ext){
-    diamonds-= 4000 * u_ext
+  if(diamonds >= 6000 * u_ext){
+    diamonds-= 6000 * u_ext
     diamonds = parseInt(diamonds)
     statusText.textContent = `Current Diamonds ${diamonds}`;
     clk_power+=20
     u_ext+= u_ext * .20
-    U_pick.textContent = `Unobtainiun Pick +20 - ` + Math.round(4000 * u_ext);
+    U_pick.textContent = `Unobtainiun Pick +20 - ` + Math.round(6000 * u_ext);
     buy_u = false
   }
 }
