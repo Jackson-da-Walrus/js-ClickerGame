@@ -62,22 +62,23 @@
 }
 #settings_menu{
   position: absolute;
-  width: 300px;
+  width: 200px;
   height: 200px;
   background-image: url('https://stackblitz.com/files/js-d2saxc/github/Jackson-da-Walrus/js-ClickerGame/main/images/Screenshot%202023-05-06%209.42.49%20PM.png');
   background-size: 100%;
   left: 1600px;
   top: 70px;
-  transition: .4s;
+  transition: .5s;
 }
 #settings_menu.active{
-  left: 1200px;
+  left: 1170px;
 }
 #setting_menu ul li{
   list-style: none;
-  color: #fff;
-  padding: 20px 24px;
+  color: rgb(255, 255, 255);
   font-size: 16px;
+  padding: 20px 24px;
+  
 }
 body{
   -webkit-touch-callout: none;
