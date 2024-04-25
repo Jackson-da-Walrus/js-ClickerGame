@@ -97,7 +97,7 @@ function buy_drn(){
     auto_clicker = auto_clicker + 1;
     diamonds = diamonds - 13000 * drn_ext
     drn_ext += drn_ext * .25
-    Plasma_dr.textContent = `Plasma drone +15/s - ` + Math.round(13000 * drn_ext);
+    Plasma_dr.textContent = `Plasma drone +20/s - ` + Math.round(13000 * drn_ext);
     diamonds = parseInt(diamonds)
     document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     setInterval(function(){
@@ -112,7 +112,7 @@ function buy_drn(){
     auto_clicker = auto_clicker + 1;
     diamonds = diamonds - 20000 * prnt_ext
     prnt_ext += prnt_ext * .25
-    Diamond_pnt.textContent = `Diamond printer +30/s - ` + Math.round(20000 * prnt_ext);
+    Diamond_pnt.textContent = `Diamond printer +40/s - ` + Math.round(20000 * prnt_ext);
     diamonds = parseInt(diamonds)
     document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
     setInterval(function(){
