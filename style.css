@@ -62,16 +62,16 @@
 }
 #Settings_menu{
   position: absolute;
-  width: 200px;
-  height: 200px;
-  background-image: url('https://stackblitz.com/files/js-d2saxc/github/Jackson-da-Walrus/js-ClickerGame/main/images/Screenshot%202023-05-06%209.42.49%20PM.png');
+  width: 230px;
+  height: 130px;
+  background-color: aliceblue;
   background-size: 100%;
   left: 1600px;
-  top: 70px;
+  top: 50px;
   transition: .5s;
 }
 #Settings_menu.active{
-  left: 1170px;
+  left: 1140px;
 }
 #Setting_menu ul li{
   list-style-type: none;

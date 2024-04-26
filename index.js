@@ -23,8 +23,8 @@ statusText.textContent = `Current Diamonds ${diamonds}`;
 gamestart();
 
 function gamestart(){
-  document.getElementById("credits").style.listStyle = "none";
-  document.getElementById("clk_power_see").style.listStyle = "none";
+  
+  fix_lists();
   diamond_btn.addEventListener("click", add);
   gear_icon.addEventListener("click", open_settings);
   shop_btn.addEventListener("click", show_t);
@@ -40,7 +40,11 @@ function gamestart(){
   Diamond_pnt.addEventListener("click", buy_prnt)
 }
 
-
+function fix_lists(){
+  document.getElementById("credits").style.listStyle = "none";
+  document.getElementById("clk_power_see").style.listStyle = "none";
+  document.getElementById("per_sec").style.listStyle = "none";
+}
 
 function rebirth(){
   if(diamonds >= 50000 * rebirth_ext){
@@ -74,6 +78,7 @@ function buy_geo(){
     auto_clicker = auto_clicker + 1;
     diamonds = diamonds - 350 * geo_ext
     geo_ext += geo_ext * .25
+    document.getElementById("per_sec").innerText = "Per second - " + dps;
     Geo.textContent = `Geologist +1/s -` + Math.round(350 * geo_ext);
     diamonds = parseInt(diamonds)
     document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
@@ -90,6 +95,7 @@ function buy_drl(){
     auto_clicker = auto_clicker + 1;
     diamonds = diamonds - 3000 * drl_ext
     drl_ext += drl_ext * .25
+    document.getElementById("per_sec").innerText = "Per second - " + dps;
     Auto_d.textContent = `Auto drill +5/s - ` + Math.round(3000 * drl_ext);
     diamonds = parseInt(diamonds)
     document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
@@ -106,6 +112,7 @@ function buy_drn(){
     auto_clicker = auto_clicker + 1;
     diamonds = diamonds - 13000 * drn_ext
     drn_ext += drn_ext * .25
+    document.getElementById("per_sec").innerText = "Per second - " + dps;
     Plasma_dr.textContent = `Plasma drone +20/s - ` + Math.round(13000 * drn_ext);
     diamonds = parseInt(diamonds)
     document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
@@ -121,6 +128,7 @@ function buy_drn(){
     auto_clicker = auto_clicker + 1;
     diamonds = diamonds - 20000 * prnt_ext
     prnt_ext += prnt_ext * .25
+    document.getElementById("per_sec").innerText = "Per second - " + dps;
     Diamond_pnt.textContent = `Diamond printer +40/s - ` + Math.round(20000 * prnt_ext);
     diamonds = parseInt(diamonds)
     document.getElementById("statusText").innerText = "Current Diamonds " + diamonds;
@@ -155,7 +163,7 @@ function buy_w(){
     statusText.textContent = `Current Diamonds ${diamonds}`;
     clk_power+=1
     w_ext+= w_ext * .20
-    document.getElementById("clk_power_see").innerText = "Per click -" + clk_power;
+    document.getElementById("clk_power_see").innerText = "Per click - " + clk_power;
     W_pick.textContent = `Wooden Pick +1 - ` + Math.round(50 * w_ext);
     buy_w = false
   }
@@ -167,7 +175,7 @@ function buy_s(){
     statusText.textContent = `Current Diamonds ${diamonds}`;
     clk_power+=3
     s_ext+= s_ext * .20
-    document.getElementById("clk_power_see").innerText = "Per click -" + clk_power;
+    document.getElementById("clk_power_see").innerText = "Per click - " + clk_power;
     S_pick.textContent = `Stone Pick +3 - ` + Math.round(200 * s_ext);
     buy_s = false
   }
@@ -179,7 +187,7 @@ function buy_c(){
     statusText.textContent = `Current Diamonds ${diamonds}`;
     clk_power+=10
     c_ext+= c_ext * .20
-    document.getElementById("clk_power_see").innerText = "Per click -" + clk_power;
+    document.getElementById("clk_power_see").innerText = "Per click - " + clk_power;
     C_pick.textContent = `Copper Pick +10 - ` + Math.round(2000 * c_ext);
     buy_c = false
   }
@@ -191,7 +199,7 @@ function buy_u(){
     statusText.textContent = `Current Diamonds ${diamonds}`;
     clk_power+=20
     u_ext+= u_ext * .20
-    document.getElementById("clk_power_see").innerText = "Per click -" + clk_power;
+    document.getElementById("clk_power_see").innerText = "Per click - " + clk_power;
     U_pick.textContent = `Unobtainiun Pick +20 - ` + Math.round(6000 * u_ext);
     buy_u = false
   }
