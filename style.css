@@ -60,7 +60,7 @@
   font-size: 16px;
   padding: 20px 24px;
 }
-#settings_menu{
+#Settings_menu{
   position: absolute;
   width: 200px;
   height: 200px;
@@ -70,16 +70,17 @@
   top: 70px;
   transition: .5s;
 }
-#settings_menu.active{
+#Settings_menu.active{
   left: 1170px;
 }
-#setting_menu ul li{
-  list-style: none;
+#Setting_menu ul li{
+  list-style-type: none;
   color: #fff;
   font-size: 16px;
   padding: 20px 24px;
-  
 }
+
+
 body{
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -165,12 +166,6 @@ body{
   left: 725px;
   top: 347px;
   display: none;
-}
-#credits{
-  position: absolute;
-  font-size: x-large;
-  left: 1075px;
-  color: rgb(0, 37, 85);
 }
 
 

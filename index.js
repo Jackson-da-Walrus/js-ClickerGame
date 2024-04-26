@@ -23,6 +23,8 @@ statusText.textContent = `Current Diamonds ${diamonds}`;
 gamestart();
 
 function gamestart(){
+  document.getElementById("credits").style.listStyle = "none";
+  document.getElementById("clk_power_see").style.listStyle = "none";
   diamond_btn.addEventListener("click", add);
   gear_icon.addEventListener("click", open_settings);
   shop_btn.addEventListener("click", show_t);
@@ -61,7 +63,8 @@ function rebirth(){
 }
 function open_settings(){
   document.getElementById('gear_icon').classList.toggle('active');
-  document.getElementById("settings_menu").classList.toggle('active');
+  document.getElementById("Settings_menu").classList.toggle('active');
+  
 }
 
 
