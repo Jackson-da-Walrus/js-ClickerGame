@@ -45,6 +45,21 @@ function fix_lists(){
   document.getElementById("clk_power_see").style.listStyle = "none";
   document.getElementById("per_sec").style.listStyle = "none";
 }
+function fix_stuff(){
+  W_pick.textContent = `Wood Pick +1 - ` + Math.round(50 * w_ext);
+  S_pick.textContent = `Stone Pick +3 - ` + Math.round(200 * s_ext);
+  C_pick.textContent = `Copper Pick +10 - ` + Math.round(2000 * c_ext);
+  U_pick.textContent = `Unobtanium Pick +20 - ` + Math.round(6000 * u_ext);
+
+  Diamond_pnt.textContent = `Diamond printer +40/s - ` + Math.round(20000 * prnt_ext);
+  Geo.textContent = `Geologist +1/s -` + Math.round(350 * geo_ext);
+  Auto_d.textContent = `Auto drill +5/s - ` + Math.round(3000 * drl_ext);
+  Plasma_dr.textContent = `Plasma drone +20/s - ` + Math.round(13000 * drn_ext);
+
+
+  document.getElementById("per_sec").innerText = "Per second - " + dps;
+  document.getElementById("clk_power_see").innerText = "Per click - " + clk_power;
+}
 
 function rebirth(){
   if(diamonds >= 50000 * rebirth_ext){
@@ -61,8 +76,9 @@ function rebirth(){
     s_ext = 1
     c_ext = 1
     u_ext = 1
-    rebirth_mult *= 1.15
-    rebirth_ext *= 1.18
+    fix_stuff();
+    rebirth_mult *= 1.80
+    rebirth_ext *= 2
   }
 }
 function open_settings(){
