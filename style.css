@@ -66,9 +66,9 @@
   height: 130px;
   background-color: aliceblue;
   background-size: 100%;
-  left: 1600px;
+  left: 1500px;
   top: 50px;
-  transition: .5s;
+  transition: .4s;
 }
 #Settings_menu.active{
   left: 1140px;
